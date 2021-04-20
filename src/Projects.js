@@ -8,32 +8,38 @@ const images = [
     {
     "src": "https://64.media.tumblr.com/ff0ecfd155da6a0966afc2982f71d654/934ce67d0762d3ff-a4/s1280x1920/a5c7cf74f4dbfc5f5bf0f603720f32e2b2d3d91d.png",
     "name": "MusicMash Mabile App",
-    "job":"UI & UX Designer"
+    "job": "UI & UX Designer",
+    "url": "https://www.figma.com/proto/NVfayXcuLgD7vdjJmggzUW/Spotify-Party-Time?node-id=3%3A9&scaling=scale-down&page-id=0%3A1"
     },
     {
       "src": "https://64.media.tumblr.com/efa4effc0ef8184da92426d2d093986b/ed0f99dc64d6334f-23/s2048x3072/7ee96e14ec003b7f981c9d13ad34181d6e96bcbd.png",
         "name": "MusicMash Web App",
-        "job":"UI & UX Designer & Developer"
+        "job": "UI & UX Designer & Developer",
+        "url": "https://musicmash-cb17d.web.app/"
     },
     {
     "src": "https://64.media.tumblr.com/2bb900efa363ab91f611021f5090af2f/f2f3d351d5073bcf-c1/s2048x3072/eb6cc93b707ec49ed9eceb10ad81bd08e1a9cf1f.png",
     "name": "LivingMemory",
-    "job":"UI & UX Designer & Cofounder"
+        "job": "UI & UX Designer & Cofounder",
+        "url": "https://www.behance.net/gallery/117773733/Web-Design-LivingMemory"
     },
     {
         "src": "https://64.media.tumblr.com/234b9077fd70e2e502575324997ead08/8a4be9efbb8939b6-16/s2048x3072/5688e0274000002854ca7540e53148f06dc3c41a.png",
         "name": ".Expert",
-        "job":"Founder & UI & UX Designer & Developer"
+        "job": "Founder & UI & UX Designer & Developer",
+        "url": ""
     },
     {
         "src": "https://64.media.tumblr.com/4049ff13b38b678c263199bff49693c7/f9211cf5609b4939-dc/s2048x3072/f59cf1af68f822170e19ce7f3e91e40f70aa14fc.png",
         "name": "SOOM",
-        "job":"UI & UX Designer & Cofounder"
+        "job": "UI & UX Designer & Cofounder",
+        "url": "https://www.figma.com/proto/UFaHetLzD4cquIuhe4sTKU/SOOM?node-id=15%3A43&scaling=min-zoom&page-id=2%3A1"
     },
     {
         "src": "https://64.media.tumblr.com/0b6d42df8084696065c1c87a5feae78f/8a4be9efbb8939b6-27/s2048x3072/bcd094efaea5b4b3c73f146a503e14b0eafde338.png",
         "name": "Redesign HelloTalk",
-        "job":"UI & UX Designer"
+        "job": "UI & UX Designer",
+        "url": ""
     }
 
   
@@ -67,7 +73,7 @@ const Projects=()=>{
     return (
         <div className='project'>
             
-            <h1 className='text' >Project</h1>
+            <h1 className='text' >UX Design Skills</h1>
             <div className='grow'></div>
             <div className='grow'></div>
             <div className='grow'></div>
@@ -88,12 +94,13 @@ const Projects=()=>{
                                 transition={transition}
                             >
                   
-                                <motion.img
+                                <a href={image.url}> <motion.img
                                     src={image.src}
                                     alt={image.name}
                                     variants={imageVariants}
                                     transition={transition}
-                                />
+                                    
+                                /></a>
                                 <h2 className="name" data-scroll data-scroll-delay="0.1" data-scroll-speed="9" >{image.name}</h2>
                                 <h2 className="job" data-scroll data-scroll-delay="0.1" data-scroll-speed="6" >{image.job}</h2>
                                 <div className='grow'></div>

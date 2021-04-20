@@ -89,13 +89,12 @@ img {
 }
 
 h1 {
-  font-size: 4rem;
   line-height: 1;
   font-weight: 800;
-  margin-bottom: 1rem;
-  position: absolute;
+  /* margin-bottom: 1rem; */
+  /* position: absolute; */
   top: 10vw;
-  left: 10vw;
+  /* left: 10vw; */
   z-index: 4;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -111,10 +110,11 @@ h1 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 600;
   color: #ffffff;
   max-width: 800px;
   padding: 20;
-  line-height: 1.5;
+  line-height: 1;
   @media (max-width: 768px) {
     font-size: 2rem;
   }
